@@ -1,0 +1,6 @@
+inherits = "sonokai"
+
+"ui.background" = {}
+"ui.selection" = { bg = "#383866" }
+"ui.selection.primary" = { bg = "#4444aa" }
+"ui.cursor" = { bg = "#ffff00", fg = "#222222" }

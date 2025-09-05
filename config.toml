@@ -1,4 +1,4 @@
-theme = "term16_dark"
+theme = "my-sonokai"
 
 [editor]
 line-number = "relative"
@@ -64,6 +64,8 @@ F = "file_picker"
 
 [keys.insert]
 C-l = "delete_char_forward"
+C-t = "indent"
+C-d = "unindent"
 
 [editor.lsp]
 auto-signature-help = false
