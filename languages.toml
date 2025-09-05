@@ -1,0 +1,27 @@
+[language-server]
+gopls = { command = "/home/pedro/.local/share/nvim/mason/packages/gopls/gopls" }
+clangd = { command = "/home/pedro/.local/share/nvim/mason/packages/clangd/clangd_20.1.0/bin/clangd" }
+
+[[language]]
+name = "c"
+scope = "source.c"
+file-types = ["c", "h" ]
+indent = { tab-width = 4, unit = "    " }
+auto-format = false
+language-servers = ["clangd"]
+
+[[language]]
+name = "cpp"
+scope = "source.cpp"
+file-types = [ "cpp", "hpp", "cxx", "hxx" ]
+indent = { tab-width = 4, unit = "    " }
+auto-format = false
+language-servers = ["clangd"]
+
+[[language]]
+name = "go"
+scope = "source.go"
+file-types = [ "go" ]
+indent = { tab-width = 4, unit = "    " }
+auto-format = false
+language-servers = [ "gopls" ]

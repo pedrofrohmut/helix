@@ -1,0 +1,71 @@
+theme = "term16_dark"
+
+[editor]
+line-number = "relative"
+mouse = false
+scrolloff = 0
+continue-comments = false
+auto-completion = false
+auto-format = false
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+tabpad = "·"
+newline = "⏎"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+# H = "goto_first_nonwhitespace"
+# L = "goto_line_end"
+
+C-d = "@29zj" # Half Page Down
+C-u = "@29zk" # Half Page Up
+C-f = "@58zj" # Page Down
+C-b = "@58zk" # Page Up
+
+M = "align_view_center"
+H = "align_view_top"
+L = "align_view_bottom"
+
+A-s = "save_selection"
+
+i = ["collapse_selection", "insert_mode"]
+a = ["collapse_selection", "append_mode"]
+A-i = "insert_mode"
+A-a = "append_mode"
+
+C-e = "scroll_down"
+C-y = "scroll_up"
+
+[keys.normal.g]
+h = "goto_first_nonwhitespace"
+0 = "goto_line_start"
+
+[keys.normal.space]
+f = "file_picker_in_current_directory"
+F = "file_picker"
+
+[keys.insert]
+C-l = "delete_char_forward"
+
+[editor.lsp]
+auto-signature-help = false
+display-messages = false
+
